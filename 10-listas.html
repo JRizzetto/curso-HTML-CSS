@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        nav{
+            background: red;
+            display: flex;
+            align-items: center;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: red;
+            padding: 20px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        nav a:hover{
+            background: rgba(0,0,0,.7);
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <!-- Temos três tipos de listas
+
+    <ul> = Lista não ordenada > Dentro de ul temos <li> 
+    <ol> = Lista Ordenada >  Dentro de ul temos <li> tbm. (dentro de ol temos a propriedade "type", 1 2 3, A B C, I II III.
+    <dl> = Lista de item e descrição abaixo, dentro temos <dt> e <dd> 
+    -->
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+        </ul>
+    </nav>
+    <ul>
+        <li>Café 1</li>
+        <li>Café 2</li>
+        <li>Café 3</li>
+    </ul>
+
+    <ol>
+        <li>Chá N2</li>
+        <li>Chá N5</li>
+        <li>Chá N1</li>
+    </ol>
+
+    <dl>
+        <dt>Olá</dt>
+        <dd>Dev Estudante</dd>
+        <dt>Chá</dt>
+        <dd>Café é melhor</dd>
+    </dl>
+</body>
+</html>
