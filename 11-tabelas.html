@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11- Tabelas</title>
+</head>
+
+<style>
+
+    table{
+        border-collapse: collapse;
+        width: 800px;
+    }
+
+    table td, table th{
+        border: 1px solid #ccc;
+        padding: 5px;
+        text-align: left;
+    }
+
+    table caption{
+        caption-side: bottom;
+        text-align: right;
+        font-style: italic;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    tfoot td, table th{
+        background: #ddd;
+    }
+
+    tfoot{
+        font-style: italic; 
+    }
+
+    .responsive-table{
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+</style>
+
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+    <div class="responsive-table">
+        <table>
+            <caption>Descrição para tabela</caption>
+            <thead>
+                <tr>
+                    <th>Título 1</th>
+                    <th>Título 2</th>
+                    <th>Título 3</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>corpo 1</td>
+                    <td>corpo 2</td>
+                    <td>corpo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">DUAS COLUNAS</td>
+                    <td>corpo 6</td>
+                </tr>
+                <tr>
+                    <td>corpo 7</td>
+                    <td>corpo 8</td>
+                    <td>corpo 9</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td>Total:</td>
+                </tr>
+                <tr>
+                    <td>R$ 555,00</td>
+                </tr>
+            </tfoot>
+    </div>    
+    </table>
+</body>
+</html>
