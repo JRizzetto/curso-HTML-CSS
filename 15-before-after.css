@@ -1,0 +1,38 @@
+/* ul li::after{
+    content: " - ";
+    background-color: blueviolet;
+    color: white;
+}
+
+ul li::before{
+    content: " - ";
+    background-color: green;
+    color: white;
+} */
+
+p{
+    font-size: 30px;
+}
+p::first-letter{
+    font-size: 150px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+p::first-line{
+    background-color: red;
+}
+
+p::selection{
+    background-color: black;
+    color: white;
+}
+
+::placeholder{
+    color: rgb(217, 0, 255);
+}
+
+.form-field::placeholder{
+    color: rgb(33, 4, 255);
+}
