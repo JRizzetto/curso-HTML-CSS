@@ -1,0 +1,50 @@
+/* .heading{
+    transition: all 1s ease-in-out;
+}
+
+.heading:hover{
+    background: red;
+}
+
+a{
+    color: darkorange
+}
+
+a:link{
+    color: pink;
+}
+
+a:visited{
+    color: firebrick;
+}
+
+a:hover{
+    background: purple;
+    color: white;
+    text-decoration: none;
+}
+
+a:active{
+    background: darkslategray;
+    color: white;
+    text-decoration: none;
+} */
+
+/* input:focus{
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:enabled{
+    background-color: blueviolet;
+    cursor: not-allowed;
+} */
+
+/* input:checked + p{
+background: red;
+} */
+
+.pai .lista li:last-child{
+    background: red;
+}
