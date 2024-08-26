@@ -1,13 +1,116 @@
-.intro-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--gap);
+.pricing{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 
-.intro-text-content{
+.responsible-table{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+table{
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table td, table th {
+    padding: 0.5rem;
+    border: 0.1rem solid var(--light-gray-color);
+}
+
+tfoot, table th{
+    background: var(--light-gray-color);
+}
+
+table caption{
+    font-style: italic;
+    text-align: left;
+    padding-top: 5rem;
+}
+
+.contact-form{
+    grid-column: span 2;
+}
+
+.contact-form .form-grid{
+    border: none;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    height: 350px;
+    
+}
+
+.form-group{
+    flex: 1 1 32rem;
+}
+
+.form-group #message{
+    height: 20rem;
+}
+
+.form-group label{
+    display: block;
+}
+
+.form-group input,
+.form-group textarea{
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+}
+
+.form-group .button{
+    border: 0.5rem solid white;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    background: rgb(16, 16, 45);
+    cursor: pointer;
+    margin-bottom: 3rem;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group .button:hover{
+    background: white;
+    color: rgb(16, 16, 45);
+    border: 0.5rem solid rgb(16, 16, 45);
+}
+
+body .full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.page-height{
+    height: 120rem;
+}
+
+.form-group ::placeholder{
+    color: rgb(220, 219, 219);
+}
+
+.footer{
+    text-align: center;
+    margin: 2rem;
+}
+
+.footer a{
+    color: black;
+}
+
+@media (max-width: 800px){
+    .intro-content{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
 }
